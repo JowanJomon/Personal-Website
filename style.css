@@ -242,7 +242,7 @@ em {
 
 /* Game Section Styles */
 #games {
-  background: linear-gradient(to right, #91afe3, #edc2ff);
+  background: linear-gradient(to right, #0f7dd8, #ca1478);
   color: #333;
   text-align: center;
   display: flex;
@@ -256,7 +256,7 @@ em {
 
 .games-text h1 {
   font-size: 4em;
-  color: #ff3385;
+  color: #f9f9f9;
   font-family: "Heading";
 
   margin-bottom: 0.5em;
