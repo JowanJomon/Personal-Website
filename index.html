@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jowan Jomon - Personal Website</title>
+    <!--Created by Jowan Manjooran Jomon on 7 December 2024-->
+    <!--
+Code copied from: https://www.w3schools.com/css/css3_flexbox.asp
+Author: W3Schools
+Name: CSS Flexbox
+Description: Demonstrates the basics of Flexbox for creating flexible layouts.
+Date retrieved: 2024-12-09
+-->
+    <!--
+Code copied from: https://www.w3schools.com/css/css3_transitions.asp
+Author: W3Schools
+Name: CSS Transitions
+Description: Explains the use of transitions for creating smooth changes in CSS properties over time.
+Date retrieved: 2024-12-09
+-->
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Roboto+Slab:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#cinema">MOVIE</a></li>
+          <li><a href="#games">GAMES</a></li>
+          <li><a href="#footer">CONTACT</a></li>
+        </ul>
+      </nav>
+      <a href="#"> <img src="./logo.png" alt="Jowan Jomon Logo" class="logo" /></a>
+     
+    </header>
+
+    <!-- Intro Section -->
+    <section>
+      <img src="./pic1.jpg" alt="Jowan Jomon in an ice throne" />
+      <div class="intro-text">
+        <h1>Designer.</h1>
+        <h1 class="storyteller">Storyteller.</h1>
+        <h1>Gamer.</h1>
+        <h1 class="cinephile">Cinephile.</h1>
+        <p>
+          Welcome to my little corner of the internet! I'm a designer fueled by
+          creativity, a <em>storyteller</em> at heart, and someone who gets way
+          too excited about<strong> movies, games, and fonts.</strong>
+          Whether it’s crafting visuals, sharing ideas, or just geeking out over
+          the latest flicks, I’m all about bringing imagination to life.
+          <em>Stick around</em>
+          , explore a bit, and let’s connect—I’d love to hear your story too!
+          <br />
+          <br />
+          Scroll down to learn more about me and let’s <em>connect!</em>
+        </p>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <div class="portfolio-text">
+        <h1>My Work.</h1>
+        <p>
+          Here’s a glimpse of some of the projects I’ve worked on. From logo
+          designs to full-blown websites, each project reflects my passion for
+          great design and innovation. Click on the images to see the projects in
+          <em>detail</em>.
+        </p>
+      </div>
+      <div class="portfolio-images">
+        <a
+          href="https://www.behance.net/gallery/177772697/Branding-for-an-Organic-Honey-Maker"
+          target="_blank"
+        >
+          <img
+            src="work1.png"
+            alt="Project 1"
+            style="width: 100%; height: 100%"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/posts/jowanjomon_designjam-financialliteracy-universityofwaterloo-activity-7261458379494060034-NPzL?utm_source=share&utm_medium=member_desktop"
+          target="_blank"
+        >
+          <img
+            src="work2.png"
+            alt="Project 2"
+            style="width: 100%; height: 100%"
+          />
+        </a>
+        <a
+          href="https://jowanjomon.framer.website/projects/oshawaunited"
+          target="_blank"
+        >
+          <img
+            src="work3.png"
+            alt="Project 3"
+            style="width: 100%; height: 100%"
+          />
+        </a>
+        <a
+          href="https://www.behance.net/gallery/192103363/Assets-designed-in-2023"
+          target="_blank"
+        >
+          <img
+            src="work4.png"
+            alt="Project 4"
+            style="width: 100%; height: 100%"
+          />
+        </a>
+        <a
+          href="https://www.behance.net/gallery/153860391/Music-Player-UI-Design"
+          target="_blank"
+        >
+          <img
+            src="work5.png"
+            alt="Project 5"
+            style="width: 100%; height: 100%"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/posts/jowanjomon_sustainability-uxdesign-collaboration-activity-7268338566756286467-csNC?utm_source=share&utm_medium=member_desktop"
+          target="_blank"
+        >
+          <img
+            src="work6.jpeg"
+            alt="Project 6"
+            style="width: 100%; height: 100%"
+          />
+        </a>
+        <a
+          href="https://www.behance.net/gallery/82736515/Ducati-Landing-Page"
+          target="_blank"
+        >
+          <img
+            src="work7.png"
+            alt="Project 7"
+            style="width: 100%; height: 100%"
+          />
+        </a>
+        <a
+          href="https://dribbble.com/shots/6710692-ALTA-Coffee?utm_source=Clipboard_Shot&utm_campaign=nightcrawlerstudio&utm_content=ALTA%20Coffee&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=nightcrawlerstudio&utm_content=ALTA%20Coffee&utm_medium=Social_Share"
+          target="_blank"
+        >
+          <img
+            src="work8.png"
+            alt="Project 8"
+            style="width: 100%; height: 100%"
+          />
+        </a>
+      </div>
+    </section>
+
+    <!-- Cinema Section -->
+    <section id="cinema">
+      <div class="cinema-text">
+        <h1>My Favorite Movies</h1>
+        <p>
+          As a cinephile, I’ve watched my fair share of films—here are some of
+          my absolute favorites. I’ve rated them based on their storytelling,
+          visuals, and the overall experience they deliver. From captivating
+          narratives to stunning cinematography, these films have left a lasting
+          impression on me. Enjoy the list and feel free to share your thoughts
+          if you’ve seen any of them!
+        </p>
+      </div>
+      <div class="movie-posters">
+        <div class="movie">
+          <img
+            src="movie1.jpg"
+            alt="The Count of Monte Cristo"
+            alt="The Count of Monte Cristo"
+            width="200"
+            height="300"
+          />
+          <a href="https://www.imdb.com/title/tt0245844/" target="_blank"
+            ><h2>The Count of Monte Cristo</h2></a
+          >
+          <p>Rating: 8.8/10</p>
+        </div>
+        <div class="movie">
+          <img src="movie2.jpg" alt="Manjummel Boys" />
+          <a href="https://www.imdb.com/title/tt26458038/" target="_blank"
+            ><h2>Manjummel Boys</h2></a
+          >
+          <p>Rating: 8/10</p>
+        </div>
+        <div class="movie">
+          <img src="movie3.jpg" alt="13 Lives" />
+          <a href="https://www.imdb.com/title/tt12262116/" target="_blank"
+            ><h2>13 Lives</h2></a
+          >
+          <p>Rating: 8.2/10</p>
+        </div>
+        <div class="movie">
+          <img src="movie4.jpg" alt="Django Unchained" />
+          <a href="https://www.imdb.com/title/tt1853728/" target="_blank"
+            ><h2>Django Unchained</h2></a
+          >
+          <p>Rating: 9.2/10</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Game Section -->
+    <section id="games">
+      <div class="games-text">
+        <h1>My Favorite Games</h1>
+        <p>
+          As a gamer, I enjoy exploring different worlds, engaging with
+          intricate storylines, and challenging my skills. Here are some of my
+          all-time favorite games that have left a lasting impact. I always
+          prefer single player games because of the depth and characters.
+        </p>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Game Title</th>
+            <th>Genre</th>
+            <th>Rating</th>
+            <th>Platform</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sleeping Dogs</td>
+            <td>Action, Open-world</td>
+            <td>8.5/10</td>
+            <td>PS3, Xbox 360, PC</td>
+            <td>
+              An open-world action game set in Hong Kong, with martial arts
+              combat and a gripping story.
+            </td>
+          </tr>
+          <tr>
+            <td>GTA 5</td>
+            <td>Action, Open-world</td>
+            <td>9.6/10</td>
+            <td>PS4, Xbox One, PC</td>
+            <td>
+              A massive open-world game featuring three protagonists, with a
+              focus on crime, heists, and exploration.
+            </td>
+          </tr>
+          <tr>
+            <td>Cricket 07</td>
+            <td>Sports</td>
+            <td>8/10</td>
+            <td>PC</td>
+            <td>
+              A realistic cricket simulation game, offering a variety of game
+              modes and teams to play with.
+            </td>
+          </tr>
+          <tr>
+            <td>Uncharted 4: A Thief's End</td>
+            <td>Action, Adventure</td>
+            <td>9.8/10</td>
+            <td>PS4</td>
+            <td>
+              A cinematic action-adventure game following Nathan Drake on his
+              final treasure-hunting adventure.
+            </td>
+          </tr>
+          <tr>
+            <td>Red Dead Redemption 2</td>
+            <td>Action, Open-world</td>
+            <td>9.5/10</td>
+            <td>PS4, Xbox One, PC</td>
+            <td>
+              A gripping Western story with an open-world experience, great
+              graphics, and deep character development.
+            </td>
+          </tr>
+          <tr>
+            <td>Assassin's Creed 3</td>
+            <td>Action, Adventure</td>
+            <td>8.7/10</td>
+            <td>PS3, Xbox 360, PC</td>
+            <td>
+              Set during the American Revolution, the game follows Connor Kenway
+              in his fight for freedom.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="game-images">
+        <img src="game1.jpg" alt="Red Dead Redemption 2" />
+        <img src="game2.jpg" alt="Sleeping Dogs" />
+        <img src="game3.jpg" alt="Cricket 07" />
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+      <div class="footer-content">
+        <div class="design-message">
+          <p>
+            "Good design is obvious. Great design is transparent"<br>
+
+             <em>Joe Sparano</em> 
+          </p>
+        </div>
+
+        <div class="social-media">
+          <ul>
+            <li>
+              <a
+                href="https://www.instagram.com/nightcrawlerstudio"
+                target="_blank"
+                class="social instagram"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/jowanjomon/"
+                target="_blank"
+                class="social linkedin"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/JowanJomon"
+                target="_blank"
+                class="social github"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://x.com/JowanJomon"
+                target="_blank"
+                class="social twitter"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.behance.net/nightcrawlerstudio"
+                target="_blank"
+                class="social behance"
+                >Behance</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-info">
+          <h2>Contact Me</h2>
+          <ul>
+            <li><a href="mailto:jmanjoor@uwaterloo.ca">Lets Get Connected</a></li>
+            <li><a href="mailto:jmanjoor@uwaterloo.ca">jmanjoor@uwaterloo.ca</li></a>
+            <li>
+              <a href="https://jowanjomon.framer.website/" target="_blank"
+                >Check out my other personal website built on Framer</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Jowan Jomon. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

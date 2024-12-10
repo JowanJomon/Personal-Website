@@ -1,0 +1,440 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: white;
+}
+
+@font-face {
+  font-family: "Heading";
+  src: url("./PoundsofViolence.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nav";
+  src: url("./ideoma_LINER.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Header Styles */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  background-color: #333;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: 10px 10px;
+  font-family: "Nav";
+  font-size: 24pt;
+  padding-left: 1em;
+  padding-right: 2em;
+  padding-top: 0.5em;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav ul li a:hover {
+  color: #ff9822;
+  text-decoration: dotted;
+}
+
+header .logo {
+  margin-left: 30px;
+}
+
+.logo {
+  width: 13em;
+}
+/* Intro Styles */
+
+section {
+  display: flex;
+  height: 100%;
+  padding-top: 4em;
+}
+
+section img {
+  float: left;
+  width: 45%;
+  height: auto;
+  object-fit: cover;
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  padding: 0 2.5em;
+  width: 60%;
+}
+
+.intro-text h1 {
+  font-family: "Heading";
+  font-size: 5em;
+  font-weight: bold;
+  line-height: 0em;
+  margin-bottom: 0.3125em;
+  color: #ff3385;
+}
+
+.intro-text h1.storyteller,
+.intro-text h1.cinephile {
+  color: #0071bb;
+}
+
+.intro-text p {
+  font-size: 1.5em;
+  color: white;
+  margin-bottom: 1em;
+  text-align: right;
+  float: right;
+  padding-top: 5em;
+}
+em {
+  color: #a7d662;
+}
+.strong {
+  color: #3498db;
+}
+
+#portfolio {
+  padding-top: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #222;
+  height: 100%;
+}
+
+.portfolio-text {
+  text-align: center;
+}
+
+.portfolio-text h1 {
+  font-size: 4em;
+  color: #ff3385;
+  font-family: "Heading";
+}
+
+.portfolio-text p {
+  font-size: 1.5em;
+  margin-bottom: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.portfolio-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  padding: 3em;
+  gap: 1.5em;
+}
+
+.portfolio-images img {
+  width: 30%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-images img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+/* Cinema Section Styles */
+
+#cinema {
+  padding-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding-bottom: 1em;
+}
+
+.cinema-text {
+  text-align: center;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.cinema-text h1 {
+  font-family: "Heading";
+  font-size: 4em;
+  color: #0071bb;
+}
+
+.cinema-text p {
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
+.movie-posters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2em;
+  width: 100%;
+}
+
+.movie {
+  width: 16em;
+  text-align: center;
+  color: white;
+}
+
+.movie img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  padding-bottom: 2em;
+  transition: transform 0.3s ease;
+}
+.movie img:hover {
+  transform: scale(1.1);
+}
+
+.movie h2 {
+  font-size: 2em;
+  color: #fa2576;
+  transition: color 0.3s ease;
+}
+.movie h2:hover {
+  font-size: 2em;
+  color: #ffffff;
+}
+
+.movie p {
+  font-size: 1.5em;
+  color: #ddd;
+}
+
+/* Game Section Styles */
+#games {
+  background: linear-gradient(to right, #91afe3, #edc2ff);
+  color: #333;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  padding-top: 3em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.games-text h1 {
+  font-size: 4em;
+  color: #ff3385;
+  font-family: "Heading";
+
+  margin-bottom: 0.5em;
+}
+
+.games-text p {
+  font-size: 1.2em;
+  color: #0e0d0d;
+  margin-bottom: 0;
+  line-height: 1.4;
+  padding-bottom: 1em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th {
+  background-color: #222;
+  color: white;
+  font-size: 1.2em;
+  font-family: "Roboto Slab", serif;
+  padding: 1em;
+}
+
+td {
+  font-size: 1em;
+  color: #ffffff;
+  text-align: center;
+  padding: 0.8em;
+  border: 1px solid #ddd;
+}
+
+.game-images {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2em;
+  padding-bottom: 5em;
+  gap: 1em;
+}
+
+.game-images img {
+  width: 30%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.game-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer Styles */
+#footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  position: relative;
+  clear: both;
+  height: 100%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.design-message p {
+  font-size: 1.1em;
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 2em;
+  color: #aaa;
+}
+
+.social-media ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-media li {
+  display: inline-block;
+  margin: 0.5em;
+}
+
+.social {
+  display: inline-block;
+  padding: 0.8em 2em;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+.social:hover {
+  color: white;
+  font-size: 1.3em 0.3s ease;
+}
+
+.social:hover {
+  opacity: 0.8;
+}
+
+.instagram {
+  background-color: #e4405f;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.github {
+  background-color: #333;
+}
+
+.twitter {
+  background-color: #1da1f2;
+}
+
+.behance {
+  background-color: #1769ff;
+}
+
+.contact-info {
+  margin-top: 2em;
+}
+
+.contact-info h2 {
+  font-size: 1.8em;
+  color: #ff3385;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  margin: 1em 0;
+}
+
+/* Link Styling */
+
+a:link {
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+a:visited {
+  color: white;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #30c6d0;
+  transform: scale(1.1);
+}
+
+a:active {
+  color: #ff6600;
+  text-decoration: underline;
+}
+
+.footer-bottom p {
+  font-size: 1em;
+  color: #aaa;
+  margin-top: 2em;
+}
